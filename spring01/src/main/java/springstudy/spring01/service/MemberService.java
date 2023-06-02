@@ -9,11 +9,11 @@ import springstudy.spring01.repository.MemoryMemberRepository;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class MemberService {
     private final MemberRepository memberRepository;
-    @Autowired
-     MemberService(MemberRepository memberRepository){
+
+     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
     /**

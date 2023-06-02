@@ -3,7 +3,7 @@ package springstudy.spring01.repository;
 import org.springframework.stereotype.Repository;
 import springstudy.spring01.domain.Member;
 import java.util.*;
-@Repository
+
 public class MemoryMemberRepository implements MemberRepository {
     private static Map<Long, Member> store = new HashMap<>();
     //실무에서는 공유 되는 변수일 경우) 동시성의 문제로 concurrentHash 사용
