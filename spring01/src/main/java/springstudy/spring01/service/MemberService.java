@@ -1,10 +1,7 @@
 package springstudy.spring01.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import springstudy.spring01.domain.Member;
 import springstudy.spring01.repository.MemberRepository;
-import springstudy.spring01.repository.MemoryMemberRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -35,7 +32,7 @@ public class MemberService {
     /**
     * 전체 회원 조회
     * */
-    public List<Member> findMember(){
+    public List<Member> findMembers(){
         return memberRepository.findAll() ;
     }
     public Optional<Member> findOne(Long memberId) {
