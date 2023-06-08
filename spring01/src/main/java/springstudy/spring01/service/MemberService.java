@@ -1,12 +1,13 @@
 package springstudy.spring01.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import springstudy.spring01.domain.Member;
 import springstudy.spring01.repository.MemberRepository;
 
 import java.util.List;
 import java.util.Optional;
-
-
+//jpa를 사용 할 때 항상 트랜잭션이 필요하다. 왜?
+@Transactional
 public class MemberService {
     private final MemberRepository memberRepository;
 
